@@ -2,7 +2,7 @@ import axios from 'axios'
 
 
 const api = axios.create({
-    baseURL:`https://mernstore-api.vercel.app/`,
+    baseURL:`https://mernstore-api.vercel.app`,
     withCredentials:true,
     headers:{
         "Content-Type":"application/json"
