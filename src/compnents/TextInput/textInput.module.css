@@ -1,0 +1,45 @@
+.inputTextWrapper{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    align-items: center;
+    
+
+}
+
+.inputTextWrapper input{
+    padding: 18px 30px;
+    margin: 10px ;
+    outline: none;
+    width: 30%;
+    border: 1px solid white;
+    border-radius:  10px;
+    font-size:  20px;
+    border: 1px solid black;
+    color: black;
+
+}
+.errormessage{
+    color: #da1b55;
+    text-align: left;
+    width: 30%;
+}
+@media (max-width: 667px) {
+    .inputTextWrapper{
+        display: flex;
+        flex-direction: column;
+        width: inherit;
+        align-items: center;
+    
+    }
+    
+    .inputTextWrapper input{
+        padding: 18px 30px;
+        margin: 10px ;
+        outline: none;
+        width: 80%;
+        border: 1px solid white;
+        border-radius:  10px;
+        font-size:  20px;
+    }
+}

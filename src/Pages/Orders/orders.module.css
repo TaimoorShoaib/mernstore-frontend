@@ -1,0 +1,82 @@
+
+*{
+  overflow-x: hidden;
+}
+.orderBody{
+  background: url(../../../public/img/tatiImage.jpg);
+  width: 100vw;
+  height: 100vh;
+  
+}
+.blogsWrapper {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .noOrder{
+    text-align: center;
+    margin-top: 30vh;
+    font-weight: bold;
+    color: red;
+    font-size: 40px;
+
+  }
+  
+  .blog {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+    padding: 16px;
+    margin: 40px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    background: url(../../../public/img/2886484.jpg);
+
+  }
+  
+  .blog img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .blog h1 {
+    text-align: left;
+    margin-top: 15px;
+    background-color: transparent;
+    color: black;
+    font-size: 2.5rem;
+  }
+  
+  .blog h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .blog h5 {
+    margin-top: 5px;
+    color: gray;
+    font-size: 0.9rem;
+  }
+  
+  .blog:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 667px) {
+    .blog img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+    }
+  }
