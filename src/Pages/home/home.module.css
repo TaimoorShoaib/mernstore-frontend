@@ -14,7 +14,61 @@
 	padding: 20px;
 	
   }
-  
+  .imgContainer{
+    display:  flex;
+    margin-top: 10vh;
+    object-fit: cover;
+    
+  }
+  .img1{
+    
+    background: url(../../../public/img/DreamShaper_v5_anime_woman_elden_ring_bloodborne_dark_arts_sha_2.jpg);
+    width: 20vw;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 2px solid white;
+    background-size: cover;
+    display:  flex;
+    margin-top: 1vh;
+    object-fit: cover;
+    &:hover {
+      transform: translateY(-4px);
+    }
+    
+  }
+  .img2{
+    
+    background: url(../../../public/img/man-typing-on-laptop-computer_rjilkps_thumbnail-1080_01.png);
+    width: 20vw;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 2px solid white;
+    background-size: cover;
+    margin-top: 1vh;
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+  .img3{
+   
+    background: url(../../../public/img/man-typing-on-laptop-computer_rjilkps_thumbnail-1080_01.png);
+    width: 20vw;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 2px solid white;
+    background-size: cover;
+    margin-top: 1vh;
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+ 
   .slider {
 	position: relative;
 	width: 100%;
@@ -130,9 +184,18 @@
 
   line-height: 1.4;
 }
-
+p:hover{
+  color: white;
+}
 @media (max-width: 767px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .img1,.img2,.img3{
+    width: 28vw;
+    
+  }
+  .imgContainer{
+    margin-left: 20px;
   }
 }

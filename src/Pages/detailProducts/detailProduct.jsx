@@ -196,16 +196,21 @@ export default function DetailProduct() {
                   onChange={(e) => setNewComment(e.target.value)}
                 />
                 {newComment !== "" && (
-                  <input
-                    className={style.input}
-                    type="number"
-                    placeholder="Rating (1-5)"
-                    min={1}
-                    max={5}
-                    value={newRating}
-                    onChange={(e) => setNewRating(e.target.value)}
-                  />
-                )}
+  <div className={style.ratingInputContainer}>
+    <input
+      className={style.inputRating}
+      type="number"
+      placeholder="Rating (1-5)"
+      min={1}
+      max={5}
+      value={newRating}
+      onChange={(e) => {
+        const value = Math.min(5, Math.max( parseInt(e.target.value) ));
+        setNewRating(value);
+      }}
+    />
+  </div>
+)}
                 <button
                   className={style.postCommentButton}
                   onClick={handlePostComment}

@@ -70,7 +70,12 @@ const Home = () => {
           &gt;
         </button>
       </div>
-
+      <div className={style.imgContainer}>
+        <div className={style.img1} onClick={() => navigate(`/product/smartPhone`)}></div>
+        <div className={style.img2} onClick={() => navigate(`/product/speakers`)}></div>
+        <div className={style.img3} onClick={() => navigate(`/product/kitchenItem`)}></div>
+      </div>
+      {/*////////////////////////////////////////////////////*/}
       <div className={style.productContainer}>
         <h2 className={style.sectionTitle}>Featured Products</h2>
         <div className={style.productGrid}>
@@ -82,7 +87,7 @@ const Home = () => {
         {/* Add your custom content for the bottom section here */}
       </div>
     </div>
-	<div className={style.grid}>
+    <div className={style.grid}>
   {products
     .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
     .slice(0, 6)
@@ -96,6 +101,7 @@ const Home = () => {
       </div>
     ))}
 </div>
+	
 
 	</body>
   );

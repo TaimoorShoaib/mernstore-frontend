@@ -54,9 +54,16 @@ export default function Cart() {
   };
 
   const handleNumOfProductChange = (index, value) => {
-    const newNumOfProduct1 = [...numOfProduct1];
-    newNumOfProduct1[index] = parseInt(value); // Convert to integer
-    setNumOfProduct1(newNumOfProduct1);
+    // Ensure value is a positive integer or set it to 1
+    const newValue = Math.max( Math.min(parseInt(value) , cart[index].product[0].numOfProduct));
+    console.log("New Value:", newValue);
+    
+    // Update the state with the new value for the specific index
+    setNumOfProduct1(prevNumOfProduct => {
+      const newNumOfProductArray = [...prevNumOfProduct];
+      newNumOfProductArray[index] = newValue;
+      return newNumOfProductArray;
+    });
   };
 
   return (

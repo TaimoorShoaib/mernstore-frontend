@@ -11,11 +11,10 @@
     
   }
   
- .h1{
+  .h1 {
+    text-align: center;
     
-    margin-left:47vw ;
-   
- }
+  }
   .img_photo{
     width: 60%;
     height: 60vh;

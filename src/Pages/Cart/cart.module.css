@@ -48,6 +48,9 @@
   color: #666;
   margin-bottom: 8px;
 }
+input{
+  color: black;
+}
 
 .cartItem .quantityInput {
   width: 70px;

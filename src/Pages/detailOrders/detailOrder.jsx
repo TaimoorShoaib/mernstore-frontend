@@ -55,6 +55,7 @@ export default function DetailOrder() {
         
           <h4 className={style.p}>Buyer PhoneNumber : {orderDetail.phoneNumber}</h4>
         
+          <h4 className={style.p}>Number of Product : {orderDetail.numOfProduct}</h4>
         <h4 className={style.p}>Buyer city : {orderDetail.city}</h4>
         <h4 className={style.p}>Buyer address : {orderDetail.address}</h4>
         <h4 className={style.p}>Buyer zipCode : {orderDetail.zipCode}</h4>
